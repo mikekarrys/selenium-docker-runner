@@ -11,8 +11,7 @@ pipeline{
 
         stage('Run Test'){
             steps{
-                sh "do
-                cker compose -f test-suites.yaml up"
+                sh "docker compose -f test-suites.yaml up"
             }
         }
     }
